@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
     });
 });
 
+// find one user by id
 router.get('/:id', (req, res) => {
   User.findOne({
     attributes: { exclude: ['password'] },
